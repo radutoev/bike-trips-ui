@@ -19,3 +19,6 @@ npm run build
 ```
 npm run lint
 ```
+
+/stations -> Stations 
+/stations/:id -> Station 

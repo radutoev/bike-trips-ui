@@ -1,21 +1,21 @@
 <template>
   <div id="app">
-     <Header></Header>
+    <Header></Header>
+    <router-view></router-view>
   </div>
-  <!-- <div id="app">
-    <Stations />
-  </div> -->
 </template>
 
 <script>
-import Header from './components/Header.vue'
 import Stations from './components/Stations.vue'
+import Header from './components/Header.vue'
 
 export default {
   name: 'app',
   components: {
     Header,
     Stations
+  },
+  methods: {
   }
 }
 </script>
