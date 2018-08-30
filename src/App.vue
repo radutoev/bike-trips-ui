@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-     <md-tabs md-sync-route md-alignment="right">
-        <md-tab id="tab-stations" md-label="Stations" to=""></md-tab>
-     </md-tabs>
+     <Header></Header>
   </div>
   <!-- <div id="app">
     <Stations />
@@ -10,11 +8,13 @@
 </template>
 
 <script>
+import Header from './components/Header.vue'
 import Stations from './components/Stations.vue'
 
 export default {
   name: 'app',
   components: {
+    Header,
     Stations
   }
 }
