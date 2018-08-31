@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- <p>Using Stations.vue</p> -->
-        <p v-for="station in stations" :key="station.station_id">{{station.station_name}}</p>
+        <!-- <p v-for="station in stations" :key="station.station_id">{{station.station_name}}</p> -->
     </div>
 </template>
 
@@ -11,7 +11,7 @@ import { mapGetters, mapActions } from 'vuex'
 export default {    
     data() {
         return {
-            console: this
+            
         }
     },
     computed: {
