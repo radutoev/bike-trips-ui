@@ -1,4 +1,4 @@
 <template>
-    <p>Something in this tab</p>
+    <p>Something else</p>
 </template>
 
