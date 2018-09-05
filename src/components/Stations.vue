@@ -1,7 +1,7 @@
 <template>
     <div>
-        <!-- <p>Using Stations.vue</p> -->
-        <!-- <p v-for="station in stations" :key="station.station_id">{{station.station_name}}</p> -->
+        <!-- <p>Using Stations.vue</p>--> 
+        <p v-for="trip in trips" :key="trip.trip_id">{{trip.start_station_id}}</p> 
     </div>
 </template>
 
@@ -15,13 +15,14 @@ export default {
         }
     },
     computed: {
-        ...mapGetters([ 'stations' ])
+        ...mapGetters([ 'stations','trips'])
     },
     mounted: function() {
-        this.listStations()
+        this.listStations(),
+        this.gettingTrips()
     },
     methods: {
-        ...mapActions(['listStations'])
+        ...mapActions(['listStations' , 'gettingTrips'])
     }
 }
 </script>

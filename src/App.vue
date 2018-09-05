@@ -8,12 +8,14 @@
 <script>
 import Stations from './components/Stations.vue'
 import Header from './components/Header.vue'
+import Trips from './components/Trips.vue'
 
 export default {
   name: 'app',
   components: {
     Header,
-    Stations
+    Stations,
+    Trips
   },
   methods: {
   }

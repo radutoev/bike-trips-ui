@@ -9,6 +9,8 @@ import 'vue-material/dist/theme/default.css'
 import App from './App.vue'
 import Stations from './components/Stations.vue'
 import Maps from './components/Maps.vue'
+import Trips from './components/Trips.vue'
+import Tab from './components/Tab.vue'
 import store from './store'
 
 Vue.config.productionTip = false
@@ -22,7 +24,9 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
     { path: '/stations' , component: Maps},
-    { path: '/stations/:stationId' , component: Stations}
+    { path: '/stations/:stationId' , component: Stations,},
+    { path: '/trips', component: Trips},
+    { path: '/tab', component: Tab}
   ]
 })
 

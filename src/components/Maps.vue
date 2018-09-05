@@ -15,13 +15,13 @@
     @click="center=m.position"
      />
      
-    <GmapMarker ref="myMarker" v-for="station in stations" :key ="station.station_id"
+    <GmapMarker :id="myMarker" ref="myMarker" v-for="station in stations" :key ="station.station_id"
     :position="google && new google.maps.LatLng(station.station_latitude, station.station_longitude)" />
 </GmapMap>
 </template>
 
 <script>
-import {gmapApi} from 'vue2-google-maps'
+import { gmapApi } from 'vue2-google-maps'
 import { mapGetters, mapActions } from 'vuex'
  
 export default {
@@ -31,6 +31,8 @@ export default {
   },
   data() {
     return {
+      markers: '#MyMarker',
+      MyMap: '#MyMap'
         
     }
   },
