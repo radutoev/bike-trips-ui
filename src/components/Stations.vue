@@ -1,6 +1,5 @@
 <template>
     <div>
-        <!-- <p>Using Stations.vue</p>--> 
         <p v-for="trip in trips" :key="trip.trip_id">{{trip.start_station_id}}</p> 
     </div>
 </template>

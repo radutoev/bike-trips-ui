@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import * as VueGoogleMaps from 'vue2-google-maps'
 
-import { MdButton, MdTabs } from 'vue-material/dist/components'
+import { MdButton, MdTabs , MdToolbar, MdIcon, MdDrawer, MdList} from 'vue-material/dist/components'
 import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
 
@@ -18,6 +18,11 @@ Vue.config.productionTip = false
 Vue.use(MdButton)
 Vue.use(MdTabs)
 Vue.use(VueRouter)
+Vue.use(MdToolbar)
+Vue.use(MdIcon)
+Vue.use(MdDrawer)
+Vue.use(MdList)
+
 
 
 const router = new VueRouter({

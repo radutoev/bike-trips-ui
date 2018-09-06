@@ -12,6 +12,8 @@
     "d3": "^3.5.17",
     "function-plot": "^1.18.1",
     "vue": "^2.5.17",
+    "vue-d3-chart": "0.0.1",
+    "vue-drawer-layout": "^0.3.2",
     "vue-material": "^1.0.0-beta-10.2",
     "vue-router": "^3.0.1",
     "vue-slideout": "^1.7.0",
