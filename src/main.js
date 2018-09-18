@@ -1,20 +1,24 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueMaterial from 'vue-material'
 import * as VueGoogleMaps from 'vue2-google-maps'
 
-import { MdButton, MdTabs , MdToolbar, MdIcon, MdDrawer, MdList} from 'vue-material/dist/components'
+import { MdButton, MdTabs , MdToolbar, MdIcon, MdDrawer, MdList, MdContent, MdDialog, MdField} from 'vue-material/dist/components'
 import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
 
 import App from './App.vue'
 import Stations from './components/Stations.vue'
+import Station from './components/Station.vue'
 import Maps from './components/Maps.vue'
 import Trips from './components/Trips.vue'
 import Tab from './components/Tab.vue'
+import Theme from './components/Theme.vue'
 import store from './store'
 
 Vue.config.productionTip = false
 
+Vue.use(VueMaterial)
 Vue.use(MdButton)
 Vue.use(MdTabs)
 Vue.use(VueRouter)
@@ -22,16 +26,20 @@ Vue.use(MdToolbar)
 Vue.use(MdIcon)
 Vue.use(MdDrawer)
 Vue.use(MdList)
-
-
+Vue.use(MdContent)
+Vue.use(MdDialog)
+Vue.use(MdField)
 
 const router = new VueRouter({
   mode: 'history',
   routes: [
-    { path: '/stations' , component: Maps},
-    { path: '/stations/:stationId' , component: Stations,},
-    { path: '/trips', component: Trips},
-    { path: '/tab', component: Tab}
+    { path: '/stations' , component: Maps}, //
+    { path: '/stations/:stationId' , component: Stations,}, //
+    { path: '/trips', component: Trips}, //
+    { path: '/tab', component: Tab}, //
+    { path: '/trips/month=:tripId', component: Trips}, //
+    { path: '/day', component: Station} ,
+    { path: '/theme', component: Theme} 
   ]
 })
 

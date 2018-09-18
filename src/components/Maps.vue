@@ -1,4 +1,10 @@
 <template>
+<md-content style="width: 100%; height: 700px; position: absolute">
+  <br>
+  <md-button class="md-raised" disabled>
+    <span >STATIONS LOCATIONS</span>
+    <md-icon theme="outlined">location_on</md-icon>
+  </md-button>
     <GmapMap
   class="google-map" 
   :id="MyMap"
@@ -18,6 +24,7 @@
     <GmapMarker :id="myMarker" ref="myMarker" v-for="station in stations" :key ="station.station_id"
     :position="google && new google.maps.LatLng(station.station_latitude, station.station_longitude)" />
 </GmapMap>
+</md-content>
 </template>
 
 <script>

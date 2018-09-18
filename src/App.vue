@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Header></Header>
-    <!-- <router-view></router-view> -->
   </div>
 </template>
 
@@ -27,6 +26,7 @@ export default {
     height: 100%; 
     margin: 0;
     padding: 0;
+    overflow: hidden;
   }
 
   #app {
