@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueMaterial from 'vue-material'
 import * as VueGoogleMaps from 'vue2-google-maps'
+import VueGoogleCharts from 'vue-google-charts'
 
 import { MdButton, MdTabs , MdToolbar, MdIcon, MdDrawer, MdList, MdContent, MdDialog, MdField} from 'vue-material/dist/components'
 import 'vue-material/dist/vue-material.min.css'
@@ -29,6 +30,7 @@ Vue.use(MdList)
 Vue.use(MdContent)
 Vue.use(MdDialog)
 Vue.use(MdField)
+Vue.use(VueGoogleCharts)
 
 const router = new VueRouter({
   mode: 'history',

@@ -45,10 +45,12 @@ export default new Vuex.Store({
             
         },
         setCounts (state, monthlyCounts) {
-            state.monthlyCounts = monthlyCounts
+            state.monthlyCounts = []
+            state.monthlyCounts.push('2018')
+            monthlyCounts.forEach(element => {
+                state.monthlyCounts.push(element)
+            });
             
-            state.monthlyCounts = monthlyCounts
-                .map(count => {return {month:'Jan',nr: '01', quantity: count}})
             //eslint-disable-next-line
             console.log(state.monthlyCounts)
         }

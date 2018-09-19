@@ -37,11 +37,22 @@
             </div>
         
         </div>
-        <div class="cmd-layout-item" style="width: 100%; height: 30%; margin-bottom: 4%; height: 150px; background: #82c0ff">
-            <div>
-                Somus textus about lorem ispus <br>
-                n cbfdh vdif bi bf<br>
-                vgieribeig bit<br>
+        <div class="md-elevation-24">
+            <div class="cmd-layout-item" style="width: 100%; height: 10%; margin-bottom: 4%; height: 150px; ">
+                <div class="left">
+                    <span class="md-subheading" style="margin-right: 50%; line-height: 50px;">GoBike: visualization and data analysis</span>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="md-subheading" style="margin-right: 75%; line-height: 50px;">Larisa Micu</span> 
+                </div>
+                <div class="right">
+                    <br>
+                    <br>
+                    <br style=" line-height: 50px;">
+                    <span class="md-subheading" style="margin-left: 75%; line-height: 50px;">Siemens CT</span>
+                </div>
+            
             </div>
         </div>
     </div>
@@ -98,6 +109,21 @@ export default {
     margin: .5em 0;
     display: block;
 }
-
+.left{
+    position: relative;
+    height:100%;
+    width: 50%;
+    float: left;
+    margin: 0;
+    display: block;
+}
+.right{
+    position: relative;
+    width: 50%;
+    float: right;
+    height:100%;
+    margin: 0%;
+    display: block;
+}
 </style>
 
