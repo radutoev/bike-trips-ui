@@ -2,7 +2,7 @@
   <div class="body" style="width: 100%; height: 100%">
     <GChart
     type="BarChart"
-    :data="chartData"
+    :data="monthlyCounts"
     :options="chartOptions"
     style="height:500px"
   />
@@ -19,16 +19,12 @@ export default {
   },
   data () {
     return {
-      chartData: [
-        ['Year', 'January', 'February', 'March','April','May','June','July','August'],
-        ['2018', 189604, 213436, 222764, 262338, 358250, 389891, 392076, 189250]
-      ],
       chartOptions: {
         chart: {
           title: 'Counts per year',
-          subtitle: '2018',
+          subtitle: '',
         },
-        colors: ['#BBDEFB', '#90CAF9', '#64B5F6', '#42A5F5', '#1E88E5', '#1976D2' , '#1565C0', '#E3F2FD']
+        colors: [ '#E3F2FD','#BBDEFB', '#90CAF9', '#64B5F6', '#42A5F5', '#1E88E5', '#1976D2' , '#1565C0','#0D47A1','#82B1FF','#448AFF','#2979FF','#2962FF']
     }
   }},
   mounted: function () {

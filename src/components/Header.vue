@@ -80,7 +80,7 @@
     <md-dialog :md-active.sync="showDialog2" style = "height:auto; width: 400px; ">
       <md-dialog-title>Pick a day</md-dialog-title>
 
-        <md-datepicker v-model="selectedDate">
+        <md-datepicker v-model="selectedDate"  style = "height:auto; width: 90%; left: 5%">
           <label>Select date</label>
         </md-datepicker>
 
@@ -132,7 +132,8 @@
       },
       someFunction() {
         this.showDialog2 = false;
-        this.$router.push('/day');
+        this.$router.push('/day?month='+ (this.selectedDate.getMonth() + 1) + '&day=' + this.selectedDate.getDate());
+        this.$router.go();
       },
       changeTheme() {
         this.$router.push('/theme');

@@ -37,8 +37,8 @@
             </div>
         
         </div>
-        <div class="md-elevation-24">
-            <div class="cmd-layout-item" style="width: 100%; height: 10%; margin-bottom: 4%; height: 150px; ">
+        <div class="md-elevation-14">
+            <div class="cmd-layout-item" style="width: 100%; height: 10%; margin-bottom: 4%; height: 150px; background: #E3F2FD;">
                 <div class="left">
                     <span class="md-subheading" style="margin-right: 50%; line-height: 50px;">GoBike: visualization and data analysis</span>
                     <br>
